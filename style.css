@@ -1,0 +1,50 @@
+body{
+  height: 100vh;
+  margin:0;
+  padding: 0;
+}
+section{
+  line-height:1.7em;
+  text-align:center;
+  padding:50px 80px;
+}
+
+.first-img, .second-img, .third-img, .fourth-img{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height: 100%;
+}
+
+.first-img{
+  background-image:url('./pic/bw-city.jpg');
+}
+.second-img{
+  background-image:url('./pic/dark-light.jpg');
+}
+.third-img{
+  background-image:url('./pic/gray-city.jpg');
+}
+.fourth-img{
+  background-image:url('./pic/dark.jpg');
+}
+
+.text{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.title{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+.light-title{
+  color: #fff;
+}
