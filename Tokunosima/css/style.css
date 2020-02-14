@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color:rgb(0,122,255);
+  cursor: pointer;
+}
+
+header,
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  color: #fff;
+  background-image: url(../pic/ocean.jpg);
+  background-size: cover;
+  z-index: -50;
+}
+
+.first-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.7em;
+  font-size: 5em;
+}
+
+main {
+  background-color: #fff;
+  z-index: 100;
+}
+
+.line {
+  position: relative;
+  top: 5vh;
+  left: 25vw;
+  height: 2px;
+  width: 50vw;
+  text-align: center;
+  background-color: silver;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 15vh;
+  height: 70vh;
+}
+
+.map {
+  width: 30vw;
+  margin: 0 5vw 0 0;
+  border-radius: 20px;
+}
+
+.info {
+  width: 50vw;
+  font-size: 1.2em;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px #bbb;
+  padding: 5vh 2vw;
+}
+
+.info-title {
+  margin: 0 0 5vh 0;
+}
+
+/* ↓ slide css ↓　*/
+
+.slide-title {
+ position: absolute;
+ top: 13vh;
+ left: 15vw; 
+ font-size: 2em;
+ border-bottom: 4px skyblue solid;
+ width: 10vw;
+}
+.slide-area {
+  position: relative;
+}
+
+#slide img {
+  position: absolute;
+  top: 55vh;
+  left: 50vw;
+  width: 70vw;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.slide-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slide-button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #bbb;
+  font-size: 2em;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 5px #bbb;
+  transition: 0.3s;
+}
+
+#left {
+  position: absolute;
+  top: 50vh;
+  left: 13vw;
+}
+
+#right {
+  position: absolute;
+  top: 50vh;
+  right: 13vw;
+}
+
+i:hover {
+  color: silver;
+  background-color: #fff;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 3px 0;
+  background-color: #fff;
+  text-align: center;
+}
