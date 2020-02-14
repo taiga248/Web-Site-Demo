@@ -1,2 +1,2 @@
 # Web Site Demo
-This is for practice.
+This is for study.
