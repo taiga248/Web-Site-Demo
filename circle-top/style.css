@@ -3,7 +3,16 @@ body{
     padding: 0;
 }
 
-section{
+.header__title{
+    position: relative;
+    top: 250px;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 0 20px 0;
+    z-index: 1;
+}
+
+.header__bg{
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +21,8 @@ section{
     background-attachment: fixed;
     clip-path: circle(100px at center);
 }
-section img{
+
+.header__bg--img{
     width: 100vw;
     height: 100vh;
 }
@@ -22,13 +32,4 @@ section img{
     margin: 200vh 0 0 0;
     background: #fff;
     padding: 100px;
-}
-
-.title{
-    position: relative;
-    top: 250px;
-    font-size: 3em;
-    text-align: center;
-    margin: 0 0 20px 0;
-    z-index: 1;
 }
