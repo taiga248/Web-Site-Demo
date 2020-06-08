@@ -5,6 +5,7 @@ let swiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 50,
+    /* card gap */
     stretch: 0,
     depth: 100,
     modifier: 1,
