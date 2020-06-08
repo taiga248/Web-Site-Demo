@@ -1,50 +1,57 @@
-body{
-  height: 100vh;
-  margin:0;
+body {
+  margin: 0;
   padding: 0;
 }
-section{
-  line-height:1.7em;
-  text-align:center;
-  padding:50px 80px;
+
+#container {
+  height: 100vh;
 }
 
-.first-img, .second-img, .third-img, .fourth-img{
-  position:relative;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+section {
+  text-align: center;
+  line-height: 1.7em;
+  padding: 50px 0;
+}
+
+.pic {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100%;
 }
 
-.first-img{
-  background-image:url('./pic/bw-city.jpg');
-}
-.second-img{
-  background-image:url('./pic/dark-light.jpg');
-}
-.third-img{
-  background-image:url('./pic/gray-city.jpg');
-}
-.fourth-img{
-  background-image:url('./pic/dark.jpg');
+.pic--first {
+  background-image: url("./pic/bw-city.jpg");
 }
 
-.text{
-  background-color:#f4f4f4;
-  color:#666;
+.pic--second {
+  background-image: url("./pic/dark-light.jpg");
 }
 
-.title{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
+.pic--third {
+  background-image: url("./pic/gray-city.jpg");
 }
-.light-title{
+
+.pic--fourth {
+  background-image: url("./pic/dark.jpg");
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 27px;
+  letter-spacing: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.title--white {
   color: #fff;
 }
+/*# sourceMappingURL=style.css.map */
