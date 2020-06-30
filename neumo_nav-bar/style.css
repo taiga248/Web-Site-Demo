@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efeeee;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 36px;
+  margin: 36px 0 0 0;
+  background: #efefef;
+}
+
+.input-dn {
+  display: none;
+}
+
+.tab {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #efeeee;
+  -webkit-box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0 0 10px 10px;
+  list-style-type: none;
+}
+
+.tab__logo {
+  margin: 0 auto 0 24px;
+  font-size: 24px;
+  color: dimgray;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px white;
+}
+
+.tab__item {
+  margin: 0 24px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+          box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1), -4px -4px 6px white;
+  border-radius: 8px;
+  -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  transition: color 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.tab__item__label {
+  display: block;
+  padding: 8px 24px;
+}
+
+.tab__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+          box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+}
+
+.tab__item:focus {
+  outline: none;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+          box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+}
+
+.tab__item:hover, .tab__item:focus {
+  color: orangered;
+}
+
+.content {
+  display: none;
+}
+
+.content__title {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 200;
+}
+
+.content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.content__item--even {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.content__item__img {
+  height: 360px;
+  margin: 36px 24px;
+  border-radius: 16px;
+}
+
+#about:checked ~ main #content-1 {
+  display: block;
+}
+
+#work:checked ~ main #content-2 {
+  display: block;
+}
+
+#contact:checked ~ main #content-3 {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

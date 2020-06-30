@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efeeee;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+
+
+header {
+  width: 100%;
+}
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 36px;
+  margin: 36px 0 0 0;
+  background: #efefef;
+}
+
+.input-dn {
+  display: none;
+}
+.tab {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #efeeee;
+  box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0 0 10px 10px;
+  list-style-type: none;
+  &__logo {
+    margin: 0 auto 0 24px;
+    font-size: 24px;
+    color: dimgray;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3),
+      -2px -2px 4px rgba(255, 255, 255, 1);
+  }
+  &__item {
+    margin: 0 24px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
+      -4px -4px 6px rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    &__label {
+      display: block;
+      padding: 8px 24px;
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+        -4px -4px 10px rgba(255, 255, 255, 1);
+    }
+    &:focus {
+      outline: none;
+      transform: scale(0.95);
+      box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
+        -4px -4px 10px rgba(255, 255, 255, 1),
+        4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset,
+        -4px -4px 10px rgba(255, 255, 255, 1) inset;
+    }
+    &:hover,
+    &:focus {
+      color: orangered;
+    }
+  }
+}
+
+.content {
+  display: none;
+  &__title {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 200;
+  }
+  &__item {
+    display: flex;
+    justify-content: start;
+    &--even {
+      justify-content: flex-end;
+    }
+    &__img {
+      height: 360px;
+      margin: 36px 24px;
+      border-radius: 16px;
+    }
+  }
+}
+
+#about:checked ~ main #content-1 {
+  display: block;
+}
+#work:checked ~ main #content-2 {
+  display: block;
+}
+#contact:checked ~ main #content-3 {
+  display: block;
+}
